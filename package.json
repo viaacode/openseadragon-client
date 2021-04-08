@@ -1,0 +1,20 @@
+{
+  "name": "openseadragon-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "ncp node_modules/openseadragon/build public",
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openseadragon": "^2.4.2"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "ncp": "^2.0.0"
+  }
+}
