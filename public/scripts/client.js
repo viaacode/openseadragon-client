@@ -3,15 +3,17 @@ const urlParams = new URLSearchParams(queryString);
 
 var manifest = "";
 
-if (urlParams.has('manifest')) {
-  manifest = urlParams.get('manifest');
+if (urlParams.has("manifest")) {
+  manifest = urlParams.get("manifest");
+}
+
+if (urlParams.has("pid")) {
+  manifest += urlParams.get("pid");
 }
 
 const viewer = OpenSeadragon({
   id: "viewer",
-  showNavigator:  true,
+  showNavigator: true,
   prefixUrl: "/openseadragon/images/",
-  tileSources: [
-    manifest
-  ]
+  tileSources: [manifest],
 });
