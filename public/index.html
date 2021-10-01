@@ -1,12 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>meemoo images</title>
-    <link rel="stylesheet" href="styles/client.css" />
-  </head>
+<html>
 
-  <body>
-    <div class="brand">meemoo</div>
-  </body>
+<head>
+    <title>meemoo image server</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/sofia-pro');
+    </style>
+    <style type="text/css">
+        html {
+            min-height: 100%;
+            background-color: #000;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Sofia Pro', Avenir, sans-serif;
+            height: 100%;
+            color: rgb(0, 0, 0);
+            box-sizing: border-box;
+            position: relative;
+            background: fixed;
+            background-size: cover;
+            background-position: center;
+            background-color: rgb(0, 200, 170);
+            margin: 0;
+            font-size: 16px;
+            padding: 3%;
+        }
+
+        #page {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        section {
+            height: 100%;
+            width: 100%;
+        }
+
+        .column--left {
+            background-image: url('meemoo-logo_lockup-black_white-rgb.png');
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-attachment: scroll;
+            background-position: left top;
+            background-size: 60%;
+            padding: 30px;
+            margin: -30px;
+            width: 30%;
+            min-width: 330px;
+        }
+
+        .column--right {
+            padding: 5rem;
+            margin: -5rem 0 0 -5rem;*/
+            flex-grow: 1;
+            background-color: white;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: left;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <section class="column--left">
+            <header>
+                <!--<img src="meemoo-logo_lockup-black_white-rgb.png" title="meemoo, Vlaams Instituut voor Archievering" alt="logo meemoo" width="300px">-->
+            </header>
+        </section>
+        <section class="column--right">
+            <header>
+                <h1>
+                    meemoo image server
+                </h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/iiif">IIIF Image API 3.0</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr />
+            <article>
+                <h2>
+                    Over IIIF
+                </h2>
+                <p>
+                    IIIF of het International Image Interoperability Framework staat voor:</p>
+                <ul>
+                    <li>
+                        een set van open standaarden die contentbeheerders toelaat hun digitale collecties en bijhorende
+                        informatie te ontsluiten
+                    </li>
+                    <li>
+                        een community: LAM’s, softwarebedrijven, developers en anderen die samen de IIIF standaarden
+                        omschrijven, ontwikkelen, testen en propageren
+                    </li>
+                </ul>
+                <p>
+                    Het volledige IIIF-raamwerk bestaat uit vier API’s (application programming interfaces), waarvan de
+                    twee belangrijkste de Image API en de Presentation API zijn. De API’s bieden een gestandardiseerde
+                    methode om bestanden te beschrijven en aan te leveren of uit te wisselen via het internet.</p>
+                </p>
+                <p>
+                    <a href="#">Image API voor het aanbieden in al dan niet bewerkte vorm (rotatie, zoom, fragment,
+                        kleuraanpassing, formaat) van bestanden en de technische metadata (info.json)
+                    </a>
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
+
 </html>
