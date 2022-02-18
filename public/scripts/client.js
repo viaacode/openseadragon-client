@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
-let manifest = "https://images-tst.meemoo.be/iiif/";
+let manifest = process.env.MANIFEST_URL;
 
 if (urlParams.has("manifest")) {
   manifest = urlParams.get("manifest");
