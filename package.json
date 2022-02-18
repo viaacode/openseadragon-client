@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "ncp node_modules/openseadragon/build public",
-    "start": "http-server",
+    "start": "http-server --cors=\"*\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
